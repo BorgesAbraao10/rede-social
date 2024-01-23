@@ -9,6 +9,10 @@
   --gray-900: #121214;
 
   --green-600: #16a34a;
+
+  --fuchsia-100: #fae8ff;
+  --fuchsia-200: #f5d0fe;
+  --fuchsia-500: #d946ef;
 }
 
 * {
