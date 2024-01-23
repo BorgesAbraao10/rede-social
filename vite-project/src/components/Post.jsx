@@ -18,22 +18,22 @@ export function Post() {
         <time title="23 de Janeiro as 11:35h" dateTime="2024-01-23 11:35:10">
           Publicado há 1h
         </time>
-
-        <div className={styles.content}>
-          <p>Fala galera! 👋👋👋👋👋👋 </p>
-          <p>
-            Acabei de subir mais um projeto no meu portfolio. Embarque nessa
-            jornada 🚀.
-          </p>
-          <p>
-            👉 <a href="">BorgesAbraao10/ReadMe.md</a>
-          </p>
-          <p>
-            {" "}
-            <a href="">#novoprojeto #redesocial #rocketseat</a>
-          </p>
-        </div>
       </header>
+
+      <div className={styles.content}>
+        <p>Fala galera! 👋👋👋👋👋👋 </p>
+        <p>
+          Acabei de subir mais um projeto no meu portfolio. Embarque nessa
+          jornada 🚀.
+        </p>
+        <p>
+          <a href="">https://github.com/BorgesAbraao10/rede-social</a>
+        </p>
+        <p>
+          {" "}
+          <a href="">#novoprojeto #redesocial #rocketseat</a>
+        </p>
+      </div>
     </article>
   );
 }
