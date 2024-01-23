@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export function Post(props) {
   return (
     <div>
@@ -6,3 +8,8 @@ export function Post(props) {
     </div>
   );
 }
+
+Post.propTypes = {
+  author: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
+};

@@ -1,4 +1,4 @@
-import { GithubLogo } from "phosphor-react";
+import { PencilLine } from "phosphor-react";
 
 import styles from "./Sidebar.module.css";
 
@@ -19,9 +19,9 @@ export function Sidebar() {
         <span>Web Developer</span>
       </div>
       <footer>
-        <a href="https://github.com/BorgesAbraao10" target="blank">
-          <GithubLogo />
-          GitHub
+        <a href="#">
+          <PencilLine size={20} />
+          Editar Perfil
         </a>
       </footer>
     </aside>
