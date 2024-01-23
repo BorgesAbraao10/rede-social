@@ -19,6 +19,11 @@
   --fuchsia-500: #d946ef;
 }
 
+:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 2px var(--green-600);
+}
+
 * {
   margin: 0;
   padding: 0;
