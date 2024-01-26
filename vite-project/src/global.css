@@ -17,6 +17,8 @@
   --fuchsia-100: #fae8ff;
   --fuchsia-200: #f5d0fe;
   --fuchsia-500: #d946ef;
+
+  --red-500: #f75a68; 
 }
 
 :focus {
