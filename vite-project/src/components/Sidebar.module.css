@@ -10,14 +10,7 @@
   object-fit: cover;
   border: 2px solid var(--green-600);
 }
-
-.avatar {
-  width: calc(3rem + 12px);
-  height: calc(3rem + 12px);
-  border-radius: 8px;
-  border: 2px solid var(--green-600);
-}
-
+          
 .profile {
   display: flex;
   flex-direction: column;
