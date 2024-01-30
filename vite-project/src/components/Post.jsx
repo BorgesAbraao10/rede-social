@@ -2,7 +2,7 @@ import { Avatar } from "./Avatar";
 import { Comment } from "./Comment";
 import styles from "./Post.module.css";
 
-export function Post() {
+export function Post(props) {
   return (
     <article className={styles.post}>
       <header>
@@ -20,18 +20,7 @@ export function Post() {
       </header>
 
       <div className={styles.content}>
-        <p>Fala galera! 👋👋👋👋👋👋 </p>
-        <p>
-          Acabei de subir mais um projeto no meu portfolio. Embarque nessa
-          jornada 🚀.
-        </p>
-        <p>
-          <a href="">https://github.com/BorgesAbraao10/rede-social</a>
-        </p>
-        <p>
-          {" "}
-          <a href="">#novoprojeto #redesocial #rocketseat</a>
-        </p>
+        
       </div>
 
       <form className={styles.commentForm}>

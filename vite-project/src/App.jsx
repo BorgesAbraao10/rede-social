@@ -6,6 +6,49 @@ import styles from "./App.module.css";
 
 import "./global.css";
 
+const posts = [
+  {
+    id: 1,
+    author: {
+      avatarUrl: "https://github.com/maykbrito.png",
+      name: "Abraão Borges",
+      role: "Web Developer",
+    },
+
+    content: [
+      { type: "paragraph", content: "Fala galera! 👋👋👋👋👋👋" },
+      {
+        type: "paragraph",
+        content:
+          "Acabei de subir mais um projeto no meu portfolio. Embarque nessa jornada 🚀",
+      },
+      { type: "link", content: "jane.design/doctorcare" },
+    ],
+    publishedAt: new Date("2024-01-30 10:00:23"),
+  },
+  {
+    id: 2,
+    author: {
+      avatarUrl: "https://github.com/maykbrito.png",
+      name: "Mayk Brito",
+      role: "CTO @Rocketseat",
+    },
+
+    content: [
+      { type: "paragraph", content: "Fala galera! 👋👋👋👋👋👋" },
+      {
+        type: "paragraph",
+        content:
+          "Acabei de subir mais um projeto no meu portfolio. Embarque nessa jornada 🚀",
+      },
+      { type: "link", content: "jane.design/doctorcare" },
+    ],
+    publishedAt: new Date("2024-02-01 20:00:00"),
+  },
+];
+
+// iteração
+
 export function App() {
   return (
     <div>
@@ -14,15 +57,15 @@ export function App() {
       <div className={styles.wrapper}>
         <Sidebar />
         <main>
-          <Post
-            author="Abraão Borges"
-            content="Olá! Sou um entusiasta da tecnologia em transição de carreira, apaixonado por programação e pela arte de transformar problemas complexos em soluções criativas. Cada linha de código que escrevo é um passo em direção a um futuro onde a inovação e a resolução de desafios andam de mãos dadas. Estou ansioso para aplicar meu conhecimento e criar um impacto positivo por meio da tecnologia.👨‍💻"
-          />
-
-          <Post
-            author="Ana Borges"
-            content="Code como se o mundo estivesse observando, mas crie como se ninguém estivesse julgando."
-          />
+          {posts.map((post) => {
+            return (
+              <Post
+                author={post.author}
+                content={post.content}
+                publishedAt={post.publishedAt}
+              />
+            );
+          })}
         </main>
       </div>
     </div>
