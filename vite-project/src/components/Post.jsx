@@ -2,15 +2,15 @@ import { Avatar } from "./Avatar";
 import { Comment } from "./Comment";
 import styles from "./Post.module.css";
 
-export function Post(props) {
+export function Post({author}) {
   return (
     <article className={styles.post}>
       <header>
         <div className={styles.author}>
-          <Avatar src="https://github.com/BorgesAbraao10.png" />
+          <Avatar src={author.avatarUrl} />
           <div className={styles.authorInfo}>
-            <strong>Abraão Borges</strong>
-            <span>Web Developer</span>
+            <strong>{author.name}</strong>
+            <span>{author.role}</span>
           </div>
         </div>
 
@@ -19,9 +19,7 @@ export function Post(props) {
         </time>
       </header>
 
-      <div className={styles.content}>
-        
-      </div>
+      <div className={styles.content}></div>
 
       <form className={styles.commentForm}>
         <strong>Deixe seu Feedback</strong>
